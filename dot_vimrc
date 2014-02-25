@@ -1,0 +1,83 @@
+set nocp
+set guioptions-=m
+set guioptions-=T
+set guioptions-=l
+set guioptions-=r
+syntax enable
+set expandtab
+set autoindent
+set shiftwidth=2
+set tabstop=2
+set t_Co=256
+
+" mark the 80th column
+set cc=80
+
+" turn on filetype plugins
+filetype plugin on
+
+colorscheme desert
+
+let g:solarized_termcolors=256
+filetype indent on
+
+map <C-o> :setlocal spell spelllang=en_us<CR>
+map <C-u> :set nospell<CR>
+autocmd FileType make setlocal noexpandtab
+set nonumber
+
+" My (perhaps primitive) keybindings
+map <C-h> 4h
+map <C-l> 4l
+map <C-j> 4j
+map <C-k> 4k
+
+map <C-t> :tabe<CR>
+map <C-a> :tabp<CR>
+map <C-d> :tabn<CR>
+
+set foldmethod=marker
+
+map <Leader>c :center<CR>
+
+" fuck ex mode
+map Q <Nop>
+set cryptmethod=blowfish
+
+" glsl stuff
+command SetGLSLFileType call SetGLSLFileType()
+function SetGLSLFileType()
+  for item in getline(1,10)
+    if item =~ "#version 400"
+      execute ':set filetype=glsl400'
+      break
+    endif
+    if item =~ "#version 330"
+      execute ':set filetype=glsl330'
+      break
+    endif
+  endfor
+endfunction
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl SetGLSLFileType
+
+" neat trick on hackernews for writing to permissioned files
+cmap w!! w !sudo tee % > /dev/null
+
+map <Leader>t :NERDTreeToggle<CR>
+
+set laststatus=2
+
+set wildignore=*.o,*.pdf,.git/*,*.opencl.cpp,*.opencl.hpp,*.so,*.mexa64,*.mat,*.calendar,*.pyc,*.swp,*.out,*.nav,*.snm,*.aux,*.toc,*.vrb,*.bbl,*.blg,*.asv,*.pyg,*.vorg.tex,*.vorg.log,*.log,*.fld,*.mdtex,*.lof,*.lot,*.mdsl,*.eps
+let g:ctrlp_custom_ignore = '\.git$'
+
+set autochdir
+
+function! ReloadAll()
+  exec ":set noconfirm"
+  exec ":bufdo e!"
+  exec "set confirm"
+endfunc
+
+map <Leader>b <ESC>:w<CR>:make!<CR>
+autocmd filetype tex map <Leader>p <ESC>:!evince %:r.pdf > /dev/null 2>&1 &<CR>
+
