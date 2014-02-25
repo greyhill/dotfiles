@@ -1,4 +1,24 @@
-set nocp
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" let Vundle manage Vundle, required
+Bundle 'gmarik/vundle'
+
+" The following are examples of different formats supported.
+" Keep bundle commands between here and filetype plugin indent on.
+" scripts on GitHub repos
+Bundle 'tpope/vim-fugitive'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'desert-warm-256'
+
+" required by vundle
+filetype plugin indent on
+
 set guioptions-=m
 set guioptions-=T
 set guioptions-=l
@@ -15,11 +35,9 @@ set cc=80
 
 " turn on filetype plugins
 filetype plugin on
-
-colorscheme desert
-
-let g:solarized_termcolors=256
 filetype indent on
+
+colorscheme desert-warm-256
 
 map <C-o> :setlocal spell spelllang=en_us<CR>
 map <C-u> :set nospell<CR>
