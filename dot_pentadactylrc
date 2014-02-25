@@ -16,7 +16,7 @@ map <C-e> :tabm +1<CR>
 set popups=window
 
 " darken everything
-source ~/.pentadactyl/new_tab.css
+"source ~/.pentadactyl/new_tab.css
 "source ~/.pentadactyl/dark_reddit.css
 "source ~/.pentadactyl/dark_google.css
 
