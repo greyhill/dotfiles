@@ -1,0 +1,17 @@
+[user]
+	name = Madison McGaffin
+	email = greyhill@gmail.com
+[giggle]
+	main-window-view = HistoryView
+	main-window-maximized = false
+	main-window-geometry = 841x569+82+53
+	file-view-vpane-position = 498
+	history-view-vpane-position = 259
+[format]
+  pretty = oneline
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
