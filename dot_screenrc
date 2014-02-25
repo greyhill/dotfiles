@@ -1,0 +1,39 @@
+# nice statusbar
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.0W}%-w%{.Bk}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+
+# disable the annoying visual bell (flash)
+vbell off
+
+# disable the silly startup message
+startup_message off
+
+# keep some scrollback
+defscrollback 1000
+
+# use ^e as the escape key
+escape ^ee
+
+# enable 256 colors?
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
+
+# start number screens from 1
+bind c screen 1
+bind ^c screen 1
+bind 0 select 10                                                            
+screen 1
+
+# scrollin -- seems to occasionally cause artifacts
+# termcapinfo xterm* ti@:te@
+
+bind s split
+bind v split -v
+bind q remove
+bind j focus down
+bind k focus up
+
+nethack on
+
