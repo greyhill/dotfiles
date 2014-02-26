@@ -15,7 +15,9 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'desert-warm-256'
-Bundle 'powerline'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/powerline'
+Bundle 'w0ng/vim-hybrid'
 
 " required by vundle
 filetype plugin indent on
@@ -38,7 +40,8 @@ set cc=80
 filetype plugin on
 filetype indent on
 
-colorscheme desert-warm-256
+"colorscheme desert-warm-256
+colorscheme hybrid
 
 map <C-o> :setlocal spell spelllang=en_us<CR>
 map <C-u> :set nospell<CR>
