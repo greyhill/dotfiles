@@ -30,8 +30,8 @@ set guioptions-=r
 syntax enable
 set expandtab
 set autoindent
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set t_Co=256
 
 " mark the 80th column
