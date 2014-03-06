@@ -15,4 +15,5 @@
 [[ ! -e vundle ]] && git clone ssh://git@github.com/gmarik/vundle.git && mkdir -p ~/.vim/bundle && ln -sf `pwd`/vundle ~/.vim/bundle/vundle
 [[ ! -e xcat ]] && git clone ssh://ec2/media/git/xcat
 [[ ! -e xray ]] && git clone ssh://ec2/media/git/xray
+[[ ! -e pfeebles ]] && git clone ssh://git@github.com/greyhill/pfeebles
 
