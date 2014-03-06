@@ -19,6 +19,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'plasticboy/vim-markdown'
 
 " required by vundle
 filetype plugin indent on
