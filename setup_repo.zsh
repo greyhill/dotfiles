@@ -16,4 +16,5 @@
 [[ ! -e xcat ]] && git clone ssh://ec2/media/git/xcat
 [[ ! -e xray ]] && git clone ssh://ec2/media/git/xray
 [[ ! -e pfeebles ]] && git clone ssh://git@github.com/greyhill/pfeebles
+[[ ! -e cbct_sv ]] && git clone ssh://ec2/media/git/cbct_sv
 
