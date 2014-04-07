@@ -17,5 +17,6 @@
 [[ ! -e xray ]] && git clone ssh://ec2/media/git/xray
 [[ ! -e pfeebles ]] && git clone ssh://git@github.com/greyhill/pfeebles
 [[ ! -e cbct_sv ]] && git clone ssh://ec2/media/git/cbct_sv
+[[ ! -e tomo_dual ]] && git clone ssh://ec2/media/git/tomo_dual
 [[ ! -e minimal_majorizer ]] && git clone ssh://ec2/media/git/minimal_majorizer
 
