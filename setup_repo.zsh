@@ -17,5 +17,5 @@
 [[ ! -e xray ]] && git clone ssh://ec2/media/git/xray
 [[ ! -e pfeebles ]] && git clone ssh://git@github.com/greyhill/pfeebles
 [[ ! -e minimal_majorizer ]] && git clone ssh://ec2/media/git/minimal_majorizer
-[[ ! -e sf2_oberon ]] && git clone ssh://ec2/media/git/sf2_oberon
+[[ ! -e gpu_recon ]] && git clone ssh://ec2/media/git/gpu_recon
 
