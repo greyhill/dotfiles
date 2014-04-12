@@ -18,4 +18,5 @@
 [[ ! -e pfeebles ]] && git clone ssh://git@github.com/greyhill/pfeebles
 [[ ! -e minimal_majorizer ]] && git clone ssh://ec2/media/git/minimal_majorizer
 [[ ! -e gpu_recon ]] && git clone ssh://ec2/media/git/gpu_recon
+[[ ! -e cv ]] && git clone ssh://ec2/media/git/cv
 
