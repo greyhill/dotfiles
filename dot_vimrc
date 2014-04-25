@@ -21,6 +21,8 @@ Bundle 'w0ng/vim-hybrid'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
+Bundle 'vim-pandoc/vim-pandoc'
+Bundle 'mikewest/vimroom'
 
 " required by vundle
 filetype plugin indent on
@@ -90,6 +92,7 @@ au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl SetGLSLFileType
 cmap w!! w !sudo tee % > /dev/null
 
 map <Leader>t :NERDTreeToggle<CR>
+map <Leader>v :VimroomToggle<CR>
 
 set laststatus=2
 
