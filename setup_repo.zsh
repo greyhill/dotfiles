@@ -20,4 +20,5 @@
 [[ ! -e minimal_majorizer ]] && git clone ssh://ec2/media/git/minimal_majorizer
 [[ ! -e gpu_recon ]] && git clone ssh://ec2/media/git/gpu_recon
 [[ ! -e cv ]] && git clone ssh://ec2/media/git/cv
+[[ ! -e pathfinder_dauphin ]] && git clone ssh://ec2/media/git/pathfinder_dauphin
 
