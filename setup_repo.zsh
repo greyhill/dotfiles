@@ -22,4 +22,5 @@
 [[ ! -e cv ]] && git clone ssh://ec2/media/git/cv
 [[ ! -e pathfinder_dauphin ]] && git clone ssh://ec2/media/git/pathfinder_dauphin
 [[ ! -e pygrouse ]] && git clone ssh://git@github.com/greyhill/pygrouse
+[[ ! -e circ_precon ]] && git clone ssh://ec2/media/git/circ_precon
 
