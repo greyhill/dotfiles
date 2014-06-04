@@ -25,4 +25,5 @@
 [[ ! -e circ_precon ]] && git clone ssh://ec2/media/git/circ_precon
 [[ ! -e bib ]] && git clone ssh://ec2/media/git/bib
 [[ ! -e ct_data ]] && git clone ssh://ec2/media/git/ct_data
+[[ ! -e ct_ge ]] && git clone ssh://ec2/media/git/ct_ge
 
