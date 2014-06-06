@@ -24,6 +24,6 @@
 [[ ! -e pygrouse ]] && git clone ssh://git@github.com/greyhill/pygrouse
 [[ ! -e circ_precon ]] && git clone ssh://ec2/media/git/circ_precon
 [[ ! -e bib ]] && git clone ssh://ec2/media/git/bib
-[[ ! -e ct_data ]] && git clone ssh://ec2/media/git/ct_data
-[[ ! -e ct_ge ]] && git clone ssh://ec2/media/git/ct_ge
+[[ ! -e ct_data ]] && git clone ssh://ir55/y/mcgaffin/repo/ct_data
+[[ ! -e gerecon ]] && git clone ssh://ec2/media/git/gerecon
 
