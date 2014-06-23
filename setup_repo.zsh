@@ -26,4 +26,5 @@
 [[ ! -e bib ]] && git clone ssh://ec2/media/git/bib
 [[ ! -e ct_data ]] && git clone ssh://ir55/y/mcgaffin/repo/ct_data
 [[ ! -e gerecon ]] && git clone ssh://ec2/media/git/gerecon
+[[ ! -e sckli ]] && git clone ssh://ec2/media/git/sckli
 
