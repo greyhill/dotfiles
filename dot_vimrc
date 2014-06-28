@@ -108,5 +108,5 @@ function! ReloadAll()
 endfunc
 
 map <Leader>b <ESC>:w<CR>:make!<CR>
-autocmd filetype tex map <Leader>p <ESC>:!evince %:r.pdf > /dev/null 2>&1 &<CR>
+autocmd filetype tex map <Leader>p <ESC>:!open %:r.pdf > /dev/null 2>&1 &<CR>
 
