@@ -1,6 +1,17 @@
 #!/usr/bin/zsh
 
 for x in ./[^.]* ; do
-    cd $x && echo "$x" && git status -s -uno && cd ..
+    cd $x &> /dev/null
+    if (( $? )); then 
+        continue
+    fi
+    st=$(git status -s -uno)
+
+    if [[ $st != '' ]]; then
+        echo "$x" 
+        echo "$st"
+    fi
+
+    cd ..
 done
 
