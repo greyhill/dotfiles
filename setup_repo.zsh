@@ -28,4 +28,6 @@
 [[ ! -e gerecon ]] && git clone ssh://ec2/media/git/gerecon
 [[ ! -e sckli ]] && git clone ssh://ec2/media/git/sckli
 [[ ! -e pynmf ]] && git clone ssh://git@github.com/greyhill/pynmf
+[[ ! -e pathfinder_rob ]] && git clone ssh://ec2/media/git/pathfinder_rob
+[[ ! -e wander ]] && git clone ssh://ec2/media/git/wander
 
