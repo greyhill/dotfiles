@@ -1,5 +1,3 @@
-#!/usr/bin/zsh
-
 dir=$(pwd)
 
 for x in ./[^.]* ; do
