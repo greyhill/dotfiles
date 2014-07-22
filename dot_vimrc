@@ -23,6 +23,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'mikewest/vimroom'
+Bundle 'Eckankar/vim-latex-folding'
 
 " required by vundle
 filetype plugin indent on
