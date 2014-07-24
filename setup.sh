@@ -6,3 +6,4 @@ ln -sf `pwd`/dot_zshrc ~/.zshrc
 ln -sf `pwd`/pull.zsh ../pull
 ln -sf `pwd`/push.zsh ../push
 ln -sf `pwd`/status.zsh ../status
+ln -sf `pwd`/dot_ssh ~/.ssh/config

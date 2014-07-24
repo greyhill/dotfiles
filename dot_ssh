@@ -1,0 +1,66 @@
+Host *
+  ServerAliveCountMax 3
+  ServerAliveInterval 10
+  TCPKeepAlive yes
+
+Host mpel8
+  HostName mpel8.eecs.umich.edu
+  user mcgaffin
+
+Host worldcrusher
+  HostName mpel8.eecs.umich.edu
+  user mcgaffin
+
+Host ir55
+  HostName ir55.eecs.umich.edu
+  User mcgaffin
+
+Host ir62
+  HostName ir62.eecs.umich.edu
+  User mcgaffin
+  ForwardX11 yes
+  Compression yes
+
+Host ir62-nf
+  HostName ir62.eecs.umich.edu
+  User mcgaffin
+  ForwardX11 yes
+  Compression yes
+
+Host ir63-nf
+  HostName ir63.eecs.umich.edu
+  User mcgaffin
+  ForwardX11 yes
+  Compression yes
+
+Host ec2
+  HostName git.greyhill.me
+  User ubuntu
+
+Host newton
+  HostName newton.local
+  Port 23
+  User grey
+
+Host erdos
+  HostName erdos.local
+  User grey
+
+Host ironwood
+  HostName ironwood.eecs.umich.edu
+  User mcgaffin
+
+Host coldwater
+  HostName coldwater.eecs.umich.edu
+  User mcgaffin
+
+Host flux
+  HostName flux-login.engin.umich.edu
+  User mcgaffin
+  ProxyCommand ssh mcgaffin@ir55.eecs.umich.edu nc %h %p
+
+Host nyx
+  HostName nyx-login.engin.umich.edu
+  User mcgaffin
+  ProxyCommand ssh mcgaffin@ir55.eecs.umich.edu nc %h %p
+
