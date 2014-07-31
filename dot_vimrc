@@ -23,7 +23,9 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'mikewest/vimroom'
-Bundle 'Eckankar/vim-latex-folding'
+
+" makes things very slow
+"Bundle 'Eckankar/vim-latex-folding'
 
 " required by vundle
 filetype plugin indent on
@@ -40,6 +42,7 @@ set tabstop=4
 set t_Co=256
 
 set guifont=Ubuntu\ Mono\ 12
+set guifont=Menlo\ Regular:h14
 
 " mark the 80th column
 set cc=80
