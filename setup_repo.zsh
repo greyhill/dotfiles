@@ -30,4 +30,6 @@
 [[ ! -e pynmf ]] && git clone ssh://git@github.com/greyhill/pynmf
 [[ ! -e pathfinder_rob ]] && git clone ssh://ec2/media/git/pathfinder_rob
 [[ ! -e wander ]] && git clone ssh://ec2/media/git/wander
+[[ ! -e gr2 ]] && git clone ssh://ec2/media/git/gr2
+[[ ! -e denoise_gmm ]] && git clone ssh://ec2/media/git/denoise_gmm
 
