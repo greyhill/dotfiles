@@ -18,19 +18,16 @@ Host ir55
 Host ir62
   HostName ir62.eecs.umich.edu
   User mcgaffin
-  ForwardX11 yes
   Compression yes
 
 Host ir62-nf
   HostName ir62.eecs.umich.edu
   User mcgaffin
-  ForwardX11 yes
   Compression yes
 
 Host ir63-nf
   HostName ir63.eecs.umich.edu
   User mcgaffin
-  ForwardX11 yes
   Compression yes
 
 Host ec2
