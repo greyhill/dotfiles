@@ -32,7 +32,7 @@ Host ir63-nf
 
 Host ec2
   HostName git.greyhill.me
-  User ubuntu
+  User mcgaffin
 
 Host newton
   HostName newton.local
