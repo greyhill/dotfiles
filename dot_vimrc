@@ -30,6 +30,9 @@ Bundle 'mikewest/vimroom'
 " required by vundle
 filetype plugin indent on
 
+" make backspace sane in os x
+set backspace=indent,eol,start
+
 set guioptions-=m
 set guioptions-=T
 set guioptions-=l
