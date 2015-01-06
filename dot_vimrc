@@ -23,6 +23,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'mikewest/vimroom'
+Bundle 'JuliaLang/julia-vim'
 
 " makes things very slow
 "Bundle 'Eckankar/vim-latex-folding'
