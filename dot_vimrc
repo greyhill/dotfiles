@@ -102,6 +102,8 @@ cmap w!! w !sudo tee % > /dev/null
 map <Leader>t :NERDTreeToggle<CR>
 map <Leader>v :VimroomToggle<CR>
 
+let NERDTreeIgnore = [ '.o$', '.log$', '.out$', '.bbl$', '.clo$', '.so$', '.aux$', '.pyg$', '.snm$', '.toc$', '.fld$', '.nav$', '.blg$', '.pyc$', '.mex$' ]
+
 set laststatus=2
 
 set wildignore=*.o,*.pdf,.git/*,*.opencl.cpp,*.opencl.hpp,*.so,*.mexa64,*.mat,*.calendar,*.pyc,*.swp,*.out,*.nav,*.snm,*.aux,*.toc,*.vrb,*.bbl,*.blg,*.asv,*.pyg,*.vorg.tex,*.vorg.log,*.log,*.fld,*.mdtex,*.lof,*.lot,*.mdsl,*.eps
