@@ -2,6 +2,7 @@ Host *
   ServerAliveCountMax 3
   ServerAliveInterval 10
   TCPKeepAlive yes
+  ForwardAgent yes
 
 Host mpel8
   HostName mpel8.eecs.umich.edu
