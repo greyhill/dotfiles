@@ -24,6 +24,9 @@ Bundle 'petRUShka/vim-opencl'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'mikewest/vimroom'
 Bundle 'JuliaLang/julia-vim'
+Bundle 'chrisbra/csv.vim'
+Bundle 'rust-lang/rust.vim'
+Bundle 'cespare/vim-toml'
 
 " makes things very slow
 "Bundle 'Eckankar/vim-latex-folding'
