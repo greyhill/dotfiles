@@ -31,4 +31,8 @@
 [[ ! -e pathfinder_rob ]] && git clone ssh://ec2/media/git/pathfinder_rob
 [[ ! -e wander ]] && git clone ssh://ec2/media/git/wander
 [[ ! -e bingpong ]] && git clone ssh://ec2/media/git/bingpong
+[[ ! -e rsrecon ]] && git clone ssh://ec2/media/git/rsrecon
+[[ ! -e avsfldrs ]] && git clone ssh://git@github.com/greyhill/avsfldrs
+[[ ! -e linear.rs ]] && git clone ssh://git@github.com/greyhill/linear.rs
+[[ ! -e multirecon ]] && git clone ssh://mcgaffin@ir55.eecs.umich.edu/y/mcgaffin/multirecon
 
