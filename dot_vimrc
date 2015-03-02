@@ -63,7 +63,7 @@ colorscheme jellybeans
 map <C-o> :setlocal spell spelllang=en_us<CR>
 map <C-u> :set nospell<CR>
 autocmd FileType make setlocal noexpandtab
-set nonumber
+set number
 
 " My (perhaps primitive) keybindings
 map <C-h> 4h
