@@ -19,7 +19,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'plasticboy/vim-markdown'
+"Bundle 'plasticboy/vim-markdown'
+Bundle 'tpope/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'vim-pandoc/vim-pandoc'
 Bundle 'mikewest/vimroom'
@@ -63,7 +64,7 @@ colorscheme jellybeans
 map <C-o> :setlocal spell spelllang=en_us<CR>
 map <C-u> :set nospell<CR>
 autocmd FileType make setlocal noexpandtab
-set number
+set nonumber
 
 " My (perhaps primitive) keybindings
 map <C-h> 4h
@@ -105,14 +106,14 @@ cmap w!! w !sudo tee % > /dev/null
 map <Leader>t :NERDTreeToggle<CR>
 map <Leader>v :VimroomToggle<CR>
 
-let NERDTreeIgnore = [ '.o$', '.log$', '.out$', '.bbl$', '.clo$', '.so$', '.aux$', '.pyg$', '.snm$', '.toc$', '.fld$', '.nav$', '.blg$', '.pyc$', '.mex$' ]
+let NERDTreeIgnore = [ '.o$', '.log$', '.out$', '.bbl$', '.clo$', '.so$', '.aux$', '.pyg$', '.snm$', '.toc$', '.fld$', '.nav$', '.blg$', '.pyc$', '.mex$', '.bk$' ]
 
 set laststatus=2
 
 set wildignore=*.o,*.pdf,.git/*,*.opencl.cpp,*.opencl.hpp,*.so,*.mexa64,*.mat,*.calendar,*.pyc,*.swp,*.out,*.nav,*.snm,*.aux,*.toc,*.vrb,*.bbl,*.blg,*.asv,*.pyg,*.vorg.tex,*.vorg.log,*.log,*.fld,*.mdtex,*.lof,*.lot,*.mdsl,*.eps
 let g:ctrlp_custom_ignore = '\.git$'
 
-set autochdir
+" set autochdir
 
 function! ReloadAll()
   exec ":set noconfirm"
@@ -122,4 +123,6 @@ endfunc
 
 map <Leader>b <ESC>:w<CR>:make!<CR>
 autocmd filetype tex map <Leader>p <ESC>:!open %:r.pdf > /dev/null 2>&1 &<CR>
+
+autocmd filetype rust map <Leader>f <ESC>:!rustfmt %<CR>
 
