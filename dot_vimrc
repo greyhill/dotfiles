@@ -2,10 +2,10 @@ set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " let Vundle manage Vundle, required
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep bundle commands between here and filetype plugin indent on.
@@ -29,11 +29,11 @@ Bundle 'chrisbra/csv.vim'
 Bundle 'rust-lang/rust.vim'
 Bundle 'cespare/vim-toml'
 
+call vundle#end()
+filetype plugin indent on
+
 " makes things very slow
 "Bundle 'Eckankar/vim-latex-folding'
-
-" required by vundle
-filetype plugin indent on
 
 " make backspace sane in os x
 set backspace=indent,eol,start
@@ -113,7 +113,7 @@ set laststatus=2
 set wildignore=*.o,*.pdf,.git/*,*.opencl.cpp,*.opencl.hpp,*.so,*.mexa64,*.mat,*.calendar,*.pyc,*.swp,*.out,*.nav,*.snm,*.aux,*.toc,*.vrb,*.bbl,*.blg,*.asv,*.pyg,*.vorg.tex,*.vorg.log,*.log,*.fld,*.mdtex,*.lof,*.lot,*.mdsl,*.eps
 let g:ctrlp_custom_ignore = '\.git$'
 
-" set autochdir
+set autochdir
 
 function! ReloadAll()
   exec ":set noconfirm"
