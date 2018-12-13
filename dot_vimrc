@@ -1,13 +1,10 @@
 set nocompatible
 filetype off
 
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
 " Keep bundle commands between here and filetype plugin indent on.
 " scripts on GitHub repos
 Bundle 'tpope/vim-fugitive'
@@ -19,10 +16,10 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Lokaltog/powerline'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'nanotech/jellybeans.vim'
-"Bundle 'plasticboy/vim-markdown'
 Bundle 'tpope/vim-markdown'
 Bundle 'petRUShka/vim-opencl'
 Bundle 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
 Bundle 'mikewest/vimroom'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'chrisbra/csv.vim'
@@ -77,6 +74,7 @@ map <C-a> :tabp<CR>
 map <C-d> :tabn<CR>
 
 set foldmethod=marker
+let pandoc#folding#level = 10
 
 map <Leader>c :center<CR>
 
