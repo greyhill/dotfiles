@@ -109,7 +109,7 @@ let NERDTreeIgnore = [ '.o$', '.log$', '.out$', '.bbl$', '.clo$', '.so$', '.aux$
 set laststatus=2
 
 set wildignore=*.o,*.pdf,.git/*,*.opencl.cpp,*.opencl.hpp,*.so,*.mexa64,*.mat,*.calendar,*.pyc,*.swp,*.out,*.nav,*.snm,*.aux,*.toc,*.vrb,*.bbl,*.blg,*.asv,*.pyg,*.vorg.tex,*.vorg.log,*.log,*.fld,*.mdtex,*.lof,*.lot,*.mdsl,*.eps
-let g:ctrlp_custom_ignore = '\.git$'
+let g:ctrlp_custom_ignore = '\v[\/](\.git|target)$'
 
 set autochdir
 
