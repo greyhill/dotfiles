@@ -1,0 +1,4 @@
+#!/bin/bash
+cd .
+rsync -azve ssh Music mcgaffin@git.greyhill.me:/media/storage
+rsync -azve ssh mcgaffin@git.greyhill.me:/media/storage/Music .
