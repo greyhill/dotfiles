@@ -57,6 +57,7 @@ filetype plugin on
 filetype indent on
 
 colorscheme jellybeans
+setlocal cm=blowfish2
 
 map <C-o> :setlocal spell spelllang=en_us<CR>
 map <C-u> :set nospell<CR>
@@ -123,4 +124,6 @@ map <Leader>b <ESC>:w<CR>:make!<CR>
 autocmd filetype tex map <Leader>p <ESC>:!open %:r.pdf > /dev/null 2>&1 &<CR>
 
 autocmd filetype rust map <Leader>f <ESC>:!rustfmt %<CR>
+
+autocmd filetype markdown map <Leader>g <ESC>:tabe <cfile>.md<CR>
 
