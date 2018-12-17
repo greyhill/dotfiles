@@ -26,6 +26,8 @@ Bundle 'chrisbra/csv.vim'
 Bundle 'rust-lang/rust.vim'
 Bundle 'cespare/vim-toml'
 
+Bundle 'keith/swift.vim'
+
 call vundle#end()
 filetype plugin indent on
 
