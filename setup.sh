@@ -4,6 +4,15 @@ ln -sf `pwd`/dot_screenrc ~/.screenrc
 ln -sf `pwd`/dot_zshrc ~/.zshrc
 ln -sf `pwd`/dot_ssh ~/.ssh/config
 
+rm ~/music
+ln -sf ~/Music ~/music
+rm ~/downloads
+ln -sf ~/Downloads ~/downloads
+rm ~/wiki
+ln -sf ~/ext/wiki ~/wiki
+rm ~/articles
+ln -sf ~/ext/articles ~/articles
+
 # sync scripts
 if [ ! -d $HOME/bin ]; then
     mkdir ~/bin

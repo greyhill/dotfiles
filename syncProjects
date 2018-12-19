@@ -6,5 +6,5 @@ for proj in $(ssh mcgaffin@git.greyhill.me 'cd /media/git && ls .'); do
         echo "Doesn't exist locally, cloning"
         git clone ssh://mcgaffin@git.greyhill.me/media/git/$proj
     fi
-    cd $proj && git fetch origin && cd ..
+    cd $proj && git pull origin master:master && git push origin master:master && cd $HOME/ext
 done
