@@ -12,6 +12,8 @@ rm ~/wiki
 ln -sf ~/ext/wiki ~/wiki
 rm ~/articles
 ln -sf ~/ext/articles ~/articles
+rm ~/img
+ln -sf ~/ext/img ~/img
 
 # sync scripts
 if [ ! -d $HOME/bin ]; then
