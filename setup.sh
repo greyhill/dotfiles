@@ -14,6 +14,8 @@ rm ~/articles
 ln -sf ~/ext/articles ~/articles
 rm ~/img
 ln -sf ~/ext/img ~/img
+rm ~/music
+ln -sf ~/ext/music ~/music
 
 # sync scripts
 if [ ! -d $HOME/bin ]; then
