@@ -23,3 +23,4 @@ if [ ! -d $HOME/bin ]; then
 fi
 ln -sf `pwd`/syncMusic ~/bin/syncMusic
 ln -sf `pwd`/syncProjects ~/bin/syncProjects
+ln -sf `pwd`/syncProjectsNoContent ~/bin/syncProjectsNoContent
