@@ -25,7 +25,6 @@ Bundle 'JuliaLang/julia-vim'
 Bundle 'chrisbra/csv.vim'
 Bundle 'rust-lang/rust.vim'
 Bundle 'cespare/vim-toml'
-Bundle 'ayu-theme/ayu-vim'
 
 Bundle 'keith/swift.vim'
 
@@ -59,7 +58,7 @@ set cc=80
 filetype plugin on
 filetype indent on
 
-colorscheme ayu
+colorscheme jellybeans
 setlocal cm=blowfish2
 
 map <C-o> :setlocal spell spelllang=en_us<CR>
