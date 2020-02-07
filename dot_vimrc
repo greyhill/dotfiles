@@ -25,7 +25,6 @@ Bundle 'JuliaLang/julia-vim'
 Bundle 'chrisbra/csv.vim'
 Bundle 'rust-lang/rust.vim'
 Bundle 'cespare/vim-toml'
-Bundle 'ayu-theme/ayu-vim'
 
 Bundle 'keith/swift.vim'
 
