@@ -1,10 +1,10 @@
 #!/bin/bash
 cd $HOME/ext
-for proj in $(ssh mcgaffin@git.greyhill.me 'cd /media/git && ls .'); do
+for proj in $(ssh greyhill@fenchel.local 'cd /opt/git && ls .'); do
     echo "Checking $proj..."
     if [ ! -d $proj ]; then
         echo "Doesn't exist locally, cloning"
-        git clone ssh://mcgaffin@git.greyhill.me/media/git/$proj
+        git clone ssh://greyhill@fenchel.local/opt/git/$proj
     fi
     cd $proj && git pull origin master && git push origin master && \
         ((cat .nocontent && git annex sync) || git annex sync --content)
