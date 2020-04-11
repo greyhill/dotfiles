@@ -25,6 +25,7 @@ Bundle 'JuliaLang/julia-vim'
 Bundle 'chrisbra/csv.vim'
 Bundle 'rust-lang/rust.vim'
 Bundle 'cespare/vim-toml'
+Bundle 'tikhomirov/vim-glsl'
 
 Bundle 'keith/swift.vim'
 
@@ -99,7 +100,7 @@ function SetGLSLFileType()
     endif
   endfor
 endfunction
-au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl SetGLSLFileType
+au BufNewFile,BufRead *.comp,*.frag,*.vert,*.fp,*.vp,*.glsl SetGLSLFileType
 
 " neat trick on hackernews for writing to permissioned files
 cmap w!! w !sudo tee % > /dev/null
